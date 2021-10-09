@@ -1,4 +1,9 @@
-import refs from './refs'
+const refs = {
+  startBtnEl: document.querySelector('[data-action="start"]'),
+  stopBtnEl: document.querySelector('[data-action="stop"]'),
+  bodyEl: document.getElementById('body'),
+}
+
 
 const { startBtnEl, stopBtnEl, bodyEl } = refs
 
