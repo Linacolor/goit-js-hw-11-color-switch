@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/Linacolor/goit-js-hw-11-color-switch/issues"
   },
-  "homepage": "https://github.com/Linacolor/goit-js-hw-11-color-switch#readme",
+  "homepage": "https://github.com/Linacolor/goit-js-hw-11-color-switch",
   "devDependencies": {
     "gh-pages": "^3.2.3",
     "parcel-bundler": "^1.12.5"
