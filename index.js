@@ -4,7 +4,6 @@ const refs = {
   bodyEl: document.getElementById('body'),
 }
 
-
 const { startBtnEl, stopBtnEl, bodyEl } = refs
 
 const colors = [
@@ -20,18 +19,23 @@ stopBtnEl.addEventListener('click', stopChangeColor)
 // console.log(stopBtnEl)
 // console.log(bodyEl)
 
-// const randomIntegerFromInterval = (min, max) => {
-//   return Math.floor(Math.random() * (max - min + 1) + min)
-// }
+const randomIntegerFromInterval = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1) + min)
+}
 
 let intervalID = null
 function changeColor() {
   intervalID = setInterval(() => {
     bodyEl.style.backgroundColor =
-      colors[Math.floor(Math.random() * colors.length)]
+      colors[randomIntegerFromInterval(0, colors.length - 1)]
   }, 1000)
 }
-
+// function changeColor() {
+//   intervalID = setInterval(() => {
+//     bodyEl.style.backgroundColor =
+//       colors[Math.floor(Math.random() * colors.length)]
+//   }, 1000)
+// }
 function stopChangeColor() {
   clearInterval(intervalID)
 }
